@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header-wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+#coordinate{
+    padding-right: 400px;
+    float: right;
+}
+#main-wrapper{
+    height:700px;
+    width:700px;
+    background:lightskyblue;
+    position:relative;
+    float:left;
+}

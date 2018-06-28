@@ -1,0 +1,25 @@
+.header-wrapper{
+    width: 500px;
+    margin: 0 auto;
+}
+#main-container{
+    height: 500px;
+    width: 500px;
+    background: lightskyblue;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ball{
+    height: 30px;
+    width: 30px;
+    background: red;
+    position: absolute;
+}
+
+.ball2{
+    height: 30px;
+    width: 30px;
+    background: blue;
+    position: absolute;
+}

@@ -162,6 +162,3 @@ function ants(props)
 var container1=new container($mainWrapper);
 container1.init();
 
-var container2=new container($secondWrapper);
-container2.init();
-

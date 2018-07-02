@@ -10,6 +10,14 @@
     background: lightskyblue;
     position: relative;
 }
+.second-wrapper{
+    margin: 0 auto;
+    border:2px solid brown;
+    height: 500px;
+    width: 500px;
+    background: lightskyblue;
+    position: relative;
+}
 .ant{
     height: 20px;
     width:20px;

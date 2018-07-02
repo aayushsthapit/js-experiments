@@ -1,14 +1,16 @@
 var $mainWrapper=document.getElementById("mainWrapper");
+var $secondWrapper=document.getElementById("secondWrapper");
 var containerTop=0;
 var containerBottom=500;
 var containerLeft=0;
 var containerRight=500;
 var antWidth=20;
-var antCount=20;
+
 
 
 function container(props)
 {
+    this.antCount=30;
     var ant=[];
     var self=this;
     this.$parent=props;
@@ -18,7 +20,7 @@ function container(props)
 
     this.init=function()
     {        
-        for(var a=0;a<antCount;a++)
+        for(var a=0;a<self.antCount;a++)
         {
                 ant[a]=new ants({
                 x:this.getRandom(),
@@ -44,13 +46,13 @@ function container(props)
         setInterval(function()
         {
 
-            for(var a=0;a<antCount;a++)
+            for(var a=0;a<self.antCount;a++)
             {
 
                 ant[a].plot();
                 ant[a].update();
                 ant[a].checkBoundary();
-                ant[a].checkCollision(ant);
+                ant[a].checkCollision(ant,self.antCount);
                 // console.log(ant);
             }
     
@@ -61,7 +63,9 @@ function container(props)
     // {
     //     console.log(e.target);
     // }
-    this.$element.onclick = function(e) {
+    this.$element.onclick = function(e) 
+    {
+        console.log(self.$element);
         if(e.target && e.target.className==="ant")
         {
             var index=Array.from(this.children).indexOf(e.target);
@@ -69,9 +73,9 @@ function container(props)
             console.log(ant);
             self.$element.removeChild(e.target);
             ant.splice(index,1);
-            console.log(ant);         
+            console.log(ant);     
 
-            antCount--;          
+            self.antCount--;          
         }
         
     }
@@ -123,7 +127,7 @@ function ants(props)
         }
     }
 
-    this.checkCollision=function(ant)
+    this.checkCollision=function(ant,antCount)
     {        
         for(var i=0;i<antCount;i++)
         {
@@ -160,3 +164,6 @@ function ants(props)
 
 var container1=new container($mainWrapper);
 container1.init();
+
+var container2=new container($secondWrapper);
+container2.init();

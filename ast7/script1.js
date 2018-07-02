@@ -6,8 +6,6 @@ var containerLeft=0;
 var containerRight=500;
 var antWidth=20;
 
-
-
 function container(props)
 {
     this.antCount=30;
@@ -29,6 +27,15 @@ function container(props)
                 dy:1,
                 $parent:this.$element
             })
+            for(x=0;x<a;x++){
+                if((ant[a].x<ant[x].x+antWidth)&&(ant[a].x+antWidth>ant[x].x)&&(ant[a].y<ant[x].y+antWidth)&&(ant[a].y+antWidth>ant[x].y))
+                    {
+                        ant[a].x+=antWidth;
+                        ant[a].y+=antWidth;
+                        ant[a].dy=ant[a].dy*-1;
+                        ant[a].dx=ant[a].dx*-1;        
+                    }
+            }
         }
         this.start();
 

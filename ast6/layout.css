@@ -1,0 +1,20 @@
+.header-wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+.main-wrapper{
+    margin: 0 auto;
+    border:2px solid brown;
+    height: 500px;
+    width: 500px;
+    background: lightskyblue;
+    position: relative;
+}
+
+.ant{
+    height: 15px;
+    width:15px;
+    background:black;
+    position: absolute;
+    border-radius: 8px;
+}

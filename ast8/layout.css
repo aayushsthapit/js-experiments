@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-wrapper
+{
+    height: 591px;
+    width: 420px;
+    margin: 0 auto;
+    background: blue;
+
+}
+.main-game
+{
+    width:420px;
+    height: 591px;
+    display: none;
+    position: relative;
+}
+.main-menu
+{
+    background:black;
+    width:420px;
+    height: 591px;
+    display: none;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+}
+#playbutton
+{
+    width: 205px;
+    height: 68px;
+    position: absolute;
+    top: 400px;
+    left: 108px;
+    cursor: pointer;
+}
+.background-wrapper
+{
+    height: 591px;
+    width:420px;
+    background: black;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    display: none;
+}
+.background-slider{
+    height: 5000px;
+    list-style-type: none;
+    margin-top: 0px;
+    /* display: none; */
+}
+.enemies{
+    position: absolute;
+    /* background: blue; */
+    width: 100px;
+    height: 100px;
+
+}
+
+.goodguy{
+    width: 100px;
+    height: 100px;
+    /* background: green; */
+    position: absolute;
+}
+.bullets{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius:3px; 
+    position: absolute;
+}
+
+.scoreboard{
+    width:50px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    z-index: 10;
+}
+
+#reset{
+    display: none;
+    position: absolute;
+    left:160px;
+    background: none;
+    color: white;
+    top:290px;
+    z-index: 10;
+}
+#resetbutton
+{
+    height:43px;
+    width:100px;
+    cursor: pointer;
+    border: 0px;
+}
+
+#scoretext{
+    color: white;
+}

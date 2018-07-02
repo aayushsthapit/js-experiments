@@ -1,5 +1,4 @@
 var $mainWrapper=document.getElementById("mainWrapper");
-var $secondWrapper=document.getElementById("secondWrapper");
 var containerTop=0;
 var containerBottom=500;
 var containerLeft=0;
@@ -161,4 +160,3 @@ function ants(props)
 
 var container1=new container($mainWrapper);
 container1.init();
-

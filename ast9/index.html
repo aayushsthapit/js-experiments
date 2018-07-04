@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Flappy Bird</title>
+        <link rel="stylesheet" href="layout.css">
+    </head>
+    <body>        
+        <div class="main-wrapper" id="mainWrapper">
+            <div class="main-menu" id="mainMenu">
+                <img src="images/mainmenu.png" style="cursor: pointer;" id="playButton">        
+            </div>
+            <div class="main-game" id="mainGame">
+                <div class="base-wrapper" id="baseWrapper">
+                    <ul class="move-background" id="moveBase">
+                    <li><img src="images/base.png"></li>
+                    <li><img src="images/base.png"></li>
+                    <li><img src="images/base.png"></li>
+                    <li><img src="images/base.png"></li>
+                    </ul>
+                </div>
+                <div class="scoreboard" id="scoreBoard">
+
+                </div>
+                <div class="resetscreen" id=resetScreen>
+                    <div class="reset" id="reset">
+                        <img src="images\gameover.png">
+                        <h1>Score: <span class="score" id="score"></span></h1><br>
+                        <button class="retrybutton" id="resetbutton">Retry</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>

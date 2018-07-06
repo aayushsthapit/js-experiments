@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper
+{
+    height: 600px;
+    width: 800px;
+    /* background: black; */
+    margin: 0 auto;
+}
+
+.main-menu
+{
+    background: lightskyblue;
+    width: 800px;
+    height: 600px;
+    display: none;
+    position: relative;
+    text-align: center;
+}
+
+.start-button
+{
+    position: absolute;
+    
+    
+}
+.main-game
+{
+    display: none;
+    width: 800px;
+    height: 600px;
+}
+
+.map
+{
+    height: 100px;
+    width: 100px;
+    background: #808080;
+    float: left;
+}
+
+.car
+{
+    width: 90px;
+    height: 44px;
+    background:url("images/car.png");
+    position: absolute;
+}
+

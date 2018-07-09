@@ -6,13 +6,23 @@
     <body>
         <div class="main-wrapper" id="mainWrapper">
             <div class="main-menu" id="mainMenu">
-                <button class="start-button" id="startButton">Let's GO</button>
             </div>
             <div class="main-game" id="mainGame">
-                
+                    <div class="timer-wrapper">Time: <span class="timer" id="timer"></span></div>
+                    <div class="reset" id="reset">
+                        <br>
+                        <h2>Level: <span class="display-level" id="displayLevel"></span></h2><br>
+                        <span class="display-message" id="displayMessage"></span>
+                        <br><br>
+                        <button id="restart" class="restart">Restart</button>
+                        <button id="next" class="next">Next Level</button>
+                    </div>
             </div>
         </div>
-        <!-- <script src="MainGame.js"></script> -->
+        <script src="Map.js"></script>
+        <script src="MovingOpponent.js"></script>
+        <script src="Player.js"></script>
+        <script src="MainGame.js"></script>
         <script src="script.js"></script>
         
     </body>
